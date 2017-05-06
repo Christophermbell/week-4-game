@@ -23,14 +23,13 @@ $(document).ready(function() {
 							found = true; break
 						}
 					}
-					if(!found)numbers[
-					numbers.length] = randomnumber;
+					if(!found)numbers[numbers.length] = randomnumber;
 				}
 
-				for (i = 0; i < numbers.length; i++) {
-					var imageCrystal = $("<img");
-					imageCrystal.attr("data-num", "numbers[i]");
-					imageCrystal.attr("src" "crystals[i]");
+				for (var i = 0; i < numbers.length; i++) {
+					var imageCrystal = $("<img></img>");
+					imageCrystal.attr("data-num", (numbers[i]));
+					imageCrystal.attr("src" (crystals[i]));
 					imageCrystal.attr("alt", "crystals");
 					imageCrystal.addClass("crystalImage");
 					$("#crystals").append(imageCrystal);
